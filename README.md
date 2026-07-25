@@ -1,14 +1,14 @@
-# 📊 Student Marks Analyzer (Using Pandas & NumPy)
+# Student Marks Analyzer using Pandas and NumPy
 
-## 📌 Task Description
+## Overview
 
-This task is a simple **Student Marks Analyzer** developed using **Python, Pandas, and NumPy**. It demonstrates how to create, clean, analyze, and summarize a dataset containing students' marks in different subjects.
+This project is a simple Student Marks Analyzer developed using **Python**, **Pandas**, and **NumPy**. It demonstrates how to create, clean, analyze, and summarize a dataset containing students' marks in different subjects.
 
-The dataset intentionally includes **missing values, duplicate rows, and invalid marks** to simulate real-world data cleaning and preprocessing tasks.
+The dataset intentionally includes missing values, duplicate records, and invalid marks to simulate real-world data cleaning and preprocessing.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Create a student dataset
 - Save the dataset as a CSV file
@@ -19,14 +19,14 @@ The dataset intentionally includes **missing values, duplicate rows, and invalid
 - Handle missing values
 - Calculate each student's average marks
 - Find the highest and lowest scoring students
-- Calculate class statistics using NumPy
+- Calculate subject-wise mean, median, and standard deviation using NumPy
 - Assign Pass/Fail status
 - Generate a summary report
 - Sort students by average marks
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -34,7 +34,7 @@ The dataset intentionally includes **missing values, duplicate rows, and invalid
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The dataset contains **30 students** with marks in the following subjects:
 
@@ -52,7 +52,7 @@ The dataset intentionally contains:
 
 ---
 
-## 📋 Features
+## Project Features
 
 ### 1. Create Dataset
 - Creates a Pandas DataFrame containing student records.
@@ -62,38 +62,38 @@ The dataset intentionally contains:
 - Reads the CSV file using Pandas.
 
 ### 3. Check Missing Values
-- Counts the missing values present in each subject using `isnull().sum()`.
+- Counts missing values in each subject using `isnull().sum()`.
 
 ### 4. Remove Duplicate Records
 - Detects duplicate rows.
 - Removes duplicate records using `drop_duplicates()`.
 
 ### 5. Fix Invalid Marks
-- Detects marks less than **0** or greater than **100**.
-- Replaces invalid marks with the average of the valid marks for that subject.
+- Detects marks below **0** or above **100**.
+- Replaces invalid marks with the average of valid marks for that subject.
 
 ### 6. Handle Missing Values
-- Replaces missing values (`NaN`) with the average marks of each subject after the invalid marks have been corrected.
+- Replaces missing values (`NaN`) with the subject average after invalid marks have been corrected.
 
 ### 7. Convert Marks to Integer
 - Converts all subject marks from float to integer using `astype(int)`.
 
 ### 8. Calculate Average Marks
-- Calculates the average marks of every student.
+- Calculates the average marks of each student.
 - Stores the result in a new **Average** column.
 
 ### 9. Find Topper and Lowest Scorer
-- Finds the student(s) with the highest average marks.
-- Finds the student with the lowest average marks.
+- Finds the student(s) with the highest average.
+- Finds the student with the lowest average.
 
 ### 10. Statistical Analysis
-Calculates the following statistics for every subject using NumPy:
+Calculates the following for each subject using NumPy:
 
 - Mean
 - Median
 - Standard Deviation
 
-### 11. Pass/Fail Result
+### 11. Pass/Fail Status
 - Students with an average of **40 or above** are marked as **Pass**.
 - Students with an average below **40** are marked as **Fail**.
 
@@ -110,7 +110,7 @@ Displays:
 
 ---
 
-## 📚 Libraries Used
+## Libraries Used
 
 ```python
 import pandas as pd
@@ -119,7 +119,7 @@ import numpy as np
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Internship_Task-03/
@@ -130,27 +130,27 @@ Internship_Task-03/
 
 ---
 
-## ▶️ How to Run
+## Getting Started
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/MaheenShahid78/Internship_Task-03.git
 ```
 
-### 2. Navigate to the project folder
+### Navigate to the project directory
 
 ```bash
 cd Internship_Task-03
 ```
 
-### 3. Install the required libraries
+### Install the required libraries
 
 ```bash
 pip install pandas numpy
 ```
 
-### 4. Run the Python file
+### Run the project
 
 ```bash
 python "Task 3.py"
@@ -158,7 +158,7 @@ python "Task 3.py"
 
 ---
 
-## 📊 Output
+## Program Output
 
 The program displays:
 
@@ -169,37 +169,37 @@ The program displays:
 - Student averages
 - Highest scoring student(s)
 - Lowest scoring student
-- Mean, Median, and Standard Deviation
+- Subject-wise mean, median, and standard deviation
 - Pass/Fail status
 - Summary report
 - Students sorted by average marks
 
 ---
 
-## 💡 Concepts Used
+## Concepts Used
 
 - Python
 - Pandas DataFrame
 - NumPy
 - CSV File Handling
-- Missing Value Handling (`fillna()`)
-- Duplicate Removal (`drop_duplicates()`)
 - Data Cleaning
+- Missing Value Handling
+- Duplicate Removal
 - Conditional Statements
 - For Loops
 - Statistical Analysis
-- Sorting DataFrames (`sort_values()`)
+- Data Sorting
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Maheen Shahid**
 
 ---
 
-## 📧 Contact
+## Contact
 
-Feel free to reach out if you have any questions or suggestions.
+If you have any questions or suggestions, feel free to reach out.
 
 **Email:** maheenshahid0302@gmail.com
